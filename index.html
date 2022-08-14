@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calendar">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Vivek Kumar Gupta">
+    <title>Calendar</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="renderDates()">
+    <div class="container">
+        <div class="calendar">
+            <div class="calendar-left-section">
+                <div class="left-section-wrapper">
+                    <div class="prev" onclick="moveDate('prev')">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </div>
+
+                    <div class="month">
+                        <h3 id="month"></h3>
+                        <p id="month-date"></p>
+                    </div>
+
+                    <div class="next" onclick="moveDate('next')">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thur</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+
+                <div class="days" id="cDate"></div>
+            </div>
+
+            <div class="calendar-right-section">
+                <div class="right-section-wrapper">
+                    <div class="location-section" id="lctn">
+                        <i class="fa-solid fa-location-dot"></i> &nbsp;
+                        <span id="location"></span>
+                    </div>
+
+                    <div class="temperature-section" id="temptr">
+                        <i class="fa-solid fa-temperature-quarter"></i> &nbsp;
+                        <span id="temperature"></span> &nbsp;
+                        <span id="description"></span>
+                    </div>
+
+                    <div class="time-section">
+                        <i class="fa-solid fa-clock"></i> &nbsp;&nbsp; <h4 id="time"></h4>
+                    </div>
+                </div>
+
+                <div class="event-section">
+                    <h2 class="event-heading" id="evt">Your Added events</h2>
+                    <ul id="evList">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
