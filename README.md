@@ -46,7 +46,7 @@
     
 
 ## Description
-This webpage is responsive & having Calendar Web App. In which you can schedule an upcoming event for reminder. Along with calendar this web app has to fatures to detect
+This webpage is responsive & having Calendar Web App. In which you can schedule an upcoming event for reminder. Along with calendar this web app has to features to detect
 your location, current temperature also. In this calendar there is live timer faetures so that along with calendar user can know their exact location, time & temperature
 also.
 I have used below front-end technologies to make this website:
